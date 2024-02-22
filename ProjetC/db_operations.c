@@ -89,8 +89,6 @@ void ip_to_hexadecimal(const char *ip, char *hex) {
 
 
 void add_ip_address(MYSQL *conn) {
-    MYSQL_RES *res;
-    MYSQL_ROW row;
     char adresse_ip[16];
     char masque[MAX_MASK_SIZE + 1];
     char adresse_binaire[41];
